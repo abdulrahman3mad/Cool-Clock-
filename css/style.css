@@ -1,0 +1,54 @@
+body {
+    background:#018DED url(http://unsplash.it/1500/1000?image=881&blur=9);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.edge {
+    border: 15px solid white;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock-face {
+    width: 405px;
+    height: 405px;
+    box-shadow:
+        0 0 2px 0px rgb(182, 182, 182) inset,
+        0 0 2px 1px rgb(150, 150, 150);
+}
+
+.clock .hand{
+    background-color: white;
+    box-shadow: 0 0 4px 0 grey;
+    height:150px;
+    width:5px;
+    transform-origin: 2.02px 1px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    border-radius: 2px;
+}
+
+
+.clock .second-hand{
+    background-color: rgb(196, 5, 5);
+    width: 3px;
+}
+
+.clock .hour-hand{
+    height:80px;
+}
